@@ -1,0 +1,39 @@
+const User = {
+  id,
+  name,
+  email,
+  password,
+  tasks,
+};
+
+const Task = {
+  id: string;
+  title: string;
+  description: string;
+  createdAt: string;
+  updatedAt: string;
+  status: "todo" | "in-progress" | "done"; // Статус задачи
+  priority: "low" | "medium" | "high"; // Приоритет задачи
+  userId: string; // Идентификатор пользователя, которому принадлежит задача
+};
+
+
+
+
+api
+
+/users
+/users/all  /GET
+/users/:id  /GET
+
+/auth
+/auth/register         /POST
+/auth/login            /POST
+/auth/reset-password   /POST
+
+/task
+/task/:id                      /GET
+/task/:userid/task             /POST
+/task/:userid/task/:taskId     /DELETE
+/task/tasks                    /GET 
+
